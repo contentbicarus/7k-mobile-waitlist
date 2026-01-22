@@ -24,7 +24,7 @@ GOOGLE_SHEET_ID=your-google-sheet-id
 
 **Important**: 
 - The private key must include `\n` for newlines
-- See `README-GOOGLE-SHEETS-SETUP.md` for detailed setup instructions
+- See `README/README-GOOGLE-SHEETS-SETUP.md` for detailed setup instructions
 
 ### 3. Deploy to Vercel
 
@@ -63,9 +63,11 @@ vercel --prod
 
 ## Troubleshooting
 
-See `TROUBLESHOOTING.md` for common issues and solutions.
+See `README/TROUBLESHOOTING.md` for common issues and solutions.
 
 ## Support
 
-For Google Sheets setup: See `README-GOOGLE-SHEETS-SETUP.md`
-For monitoring: See `FREE-TIER-MONITORING.md`
+For Google Sheets setup: See `README/README-GOOGLE-SHEETS-SETUP.md`
+For monitoring: See `README/FREE-TIER-MONITORING.md`
+For packaging guide: See `README/PACKAGING-GUIDE.md`
+For GitHub setup: See `README/GITHUB-SETUP.md`

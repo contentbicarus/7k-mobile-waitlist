@@ -1,0 +1,24 @@
+# Vercel
+.vercel
+
+# Dependencies
+node_modules
+
+# Environment variables
+.env
+.env.local
+*.json
+!package.json
+
+# Development/testing files
+format-private-key.js
+api/test-env.js
+generated-page.html
+
+# Unused images
+images/555a77f3-f086-4f6b-9bee-5b5e25d582af_800w.png
+images/phone.png
+
+# OS files
+.DS_Store
+Thumbs.db

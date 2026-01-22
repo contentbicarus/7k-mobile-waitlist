@@ -1,0 +1,12 @@
+{
+  "name": "7k-waitlist",
+  "version": "1.0.0",
+  "description": "7K Mobile Waitlist Landing Page",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "dependencies": {
+    "googleapis": "^128.0.0"
+  },
+  "devDependencies": {}
+}

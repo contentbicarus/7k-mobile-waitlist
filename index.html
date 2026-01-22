@@ -1,0 +1,933 @@
+<html lang="en"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>7K Mobile Landing Page</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="styles.css">
+
+<link id="all-fonts-link-font-inter" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap"><style id="all-fonts-style-font-inter">.font-inter { font-family: 'Inter', sans-serif !important; }</style><link id="all-fonts-link-font-quicksand" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&amp;display=swap"><style id="all-fonts-style-font-quicksand">.font-quicksand { font-family: 'Quicksand', sans-serif !important; }</style>
+</head>
+<body class="antialiased min-h-screen flex flex-col items-center selection:bg-blue-100 selection:text-blue-900 text-[#111] bg-[#F9FAFB]">
+
+<!-- Background (component) added by Aura -->
+<div class="aura-background-component fixed top-0 w-full h-screen opacity-50 -z-10 mix-blend-normal" data-alpha-mask="50"><div class="aura-background-component top-0 w-full -z-10 absolute h-full">
+  <div data-us-project="ty3N7ZPaIU7KlWixQFIc" class="absolute w-full h-full left-0 top-0 -z-10"></div>
+  <script type="text/javascript">
+    !function(){if(!window.UnicornStudio){window.UnicornStudio={isInitialized:!1};var i=document.createElement("script");i.src="https://cdn.jsdelivr.net/gh/hiunicornstudio/unicornstudio.js@v1.4.29/dist/unicornStudio.umd.js",i.onload=function(){window.UnicornStudio.isInitialized||(UnicornStudio.init(),window.UnicornStudio.isInitialized=!0)},(document.head || document.body).appendChild(i)}}();
+  </script>
+</div></div>
+
+    <!-- Navigation -->
+    <nav class="flex sticky z-40 transition-all duration-300 bg-transparent w-full max-w-7xl border-transparent pt-4 pr-6 pb-4 pl-6 top-0 items-center justify-between">
+        <!-- Logo -->
+        <a href="#" class="block">
+            <img src="images/7k-mobile-logo-full.png" alt="7K Mobile" class="w-auto h-16 md:h-28 object-cover">
+        </a>
+        
+        <!-- Button -->
+        <button onclick="toggleModal(true)" class="transition-all duration-300 active:scale-95 hover:bg-black hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] text-sm font-semibold text-black bg-transparent border-black border-2 rounded-full pt-2 pr-5 pb-2 pl-5 shadow-none">
+            Join Waitlist
+        </button>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="md:space-y-20 w-full max-w-7xl pt-8 pr-6 pb-16 pl-6 space-y-12">
+
+        <!-- Hero Section -->
+        <section class="relative">
+            <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-16 gap-x-8 gap-y-8 justify-between">
+                <!-- Left: Headline -->
+                <div class="lg:w-[60%] space-y-4">
+                    <span class="text-[10px] uppercase text-sm font-semibold text-gray-600 tracking-normal bg-white border-gray-200 border rounded-full pt-0.5 pr-3 pb-0.5 pl-3 shadow-sm">Coming q1 2026 - Sui ecosystem</span><h1 class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">Universal Reach,<br> <span class="xl:bg-clip-text xl:text-transparent">with Sui Speed.</span></h1>
+                </div>
+                
+                <!-- Right: Subtext & CTA -->
+                <div class="lg:w-[35%] flex flex-col lg:items-end lg:text-right text-left py-10 space-y-5 items-center">
+                    <p class="leading-relaxed text-lg text-gray-500 tracking-tight max-w-sm">
+                        The Non-Custodial Exchange Platform for Internet Capital Markets. Native DeFi OS on Sui.
+                    </p>
+                    <button onclick="toggleModal(true)" class="bg-blue-600 text-white px-8 py-3 rounded-full text-base font-medium hover:bg-blue-700 transition-all shadow-[0_4px_14px_0_rgba(37,99,235,0.39)] active:scale-95">
+                        Get Started
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="flex w-full pb-8 relative backdrop-blur-none scale-100 justify-center">
+                <!-- Decorative Glow -->
+                <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[80%] bg-blue-100 blur-[90px] rounded-full -z-10 opacity-60 pointer-events-none"></div>
+                
+                <div id="phone-container" class="relative cursor-pointer phone-container-hover">
+                    <!-- <img id="phone-image" src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/555a77f3-f086-4f6b-9bee-5b5e25d582af_800w.png" alt="7K Mobile App Interface" class="md:max-w-[500px] lg:max-w-[540px] transform transition-all duration-500 w-full max-w-[340px] object-contain z-10 relative shadow scale-95 hero-image-mask"> -->
+                    <img id="phone-image" src="images/phone_2_1.png" alt="7K Mobile App Interface" class="md:max-w-[500px] lg:max-w-[540px] transform transition-all duration-500 w-full max-w-[340px] object-contain z-10 relative shadow scale-95 hero-image-mask">
+                    
+                    <!-- Phone Screen Container - Constrains cracks to screen area only -->
+                    <div id="phone-screen-container" class="phone-screen-area">
+                        <!-- Crack Overlays Container - cracks will be dynamically added here -->
+                        <div id="crack-overlay-container" class="absolute inset-0 pointer-events-none z-20"></div>
+                    </div>
+                    
+                    <!-- Explosion Effect -->
+                    <div id="explosion-effect" class="absolute inset-0 pointer-events-none z-30 opacity-0"></div>
+                </div>
+
+                <!-- Floating Feature Badge 1 -->
+                <div class="absolute top-[40%] left-[24%] z-50 animate-bounce duration-[3000ms] hidden md:block">
+                    <div class="bg-white border-gray-50 border rounded-xl pt-2 pr-3 pb-2 pl-3 flex !scale-[1.75] origin-right transform-gpu gap-x-2 gap-y-2 items-center shadow-lg">
+                        <div class="text-green-600 bg-green-100 rounded-full pt-1.5 pr-1.5 pb-1.5 pl-1.5 flex">
+                            <iconify-icon icon="solar:bolt-linear" width="16" height="16"></iconify-icon>
+                        </div>
+                        <div class="text-left">
+                            <div class="text-[10px] leading-tight font-medium text-gray-500">Latency</div>
+                            <div class="leading-tight text-xs font-semibold text-gray-900">Lightning</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating Feature Badge 2 -->
+                <div class="absolute top-[62%] right-[24%] z-50 animate-bounce duration-[3000ms] delay-500 hidden md:block">
+                    <div class="bg-white border-gray-50 border rounded-xl pt-2 pr-3 pb-2 pl-3 flex !scale-[1.75] origin-left transform-gpu gap-x-2 gap-y-2 items-center shadow-lg">
+                        <div class="text-blue-600 bg-blue-100 rounded-full pt-1.5 pr-1.5 pb-1.5 pl-1.5 flex">
+                            <img src="https://cryptologos.cc/logos/sui-sui-logo.svg" alt="Sui" width="16" height="16" class="object-contain">
+                        </div>
+                        <div class="text-left">
+                            <div class="text-[10px] leading-tight font-medium text-gray-500">Sui</div>
+                            <div class="leading-tight text-xs font-semibold text-gray-900">Native</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="flex flex-col items-center">
+            <div class="text-center space-y-3 mb-10 max-w-2xl">
+                <h2 class="text-3xl font-semibold text-gray-900 tracking-tighter md:text-6xl flex items-center justify-center gap-3 flex-wrap">
+                    Why <img src="images/7k-mobile-logo-full.png" alt="7K Mobile" class="h-16 md:h-28 w-auto object-contain inline-block">?
+                </h2>
+                <p class="text-base text-gray-500">
+                    Built different. Built native. Built for power users who demand speed.
+                </p>
+            </div>
+
+            <!-- Bento Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 w-full">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:cpu-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">Sui Tech Stack</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Infrastructure built with Sui tech stack. Proud to be a builder on the fastest chain.
+                        </p>
+                    </div>
+                    <div class="mt-6 h-16 bg-gradient-to-r from-blue-50 to-transparent rounded-lg relative overflow-hidden opacity-70">
+                        <div class="flex opacity-30 absolute top-0 right-0 bottom-0 left-0 items-center justify-center">
+                            <div class="bg-blue-200 w-full h-[1px]"></div>
+                            <div class="absolute w-[1px] h-full bg-blue-200"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-indigo-50 flex items-center justify-center text-indigo-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:layers-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">DeFi Suite Built-in</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Swap, LP, Staking &amp; Lending, Margin, Perps, Portfolio Tracking... All included.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex gap-2 opacity-50">
+                         <div class="h-12 w-full bg-indigo-50 rounded-t-lg"></div>
+                         <div class="h-8 w-full bg-indigo-100 rounded-t-lg mt-auto"></div>
+                         <div class="h-10 w-full bg-indigo-50 rounded-t-lg mt-auto"></div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-orange-50 flex items-center justify-center text-orange-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:link-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">Deep Integration</h3>
+                        <p class="leading-relaxed text-sm text-gray-500">
+                            We never walk alone. 7K Mobile integrates partner SDKs directly for seamless use.
+                        </p>
+                    </div>
+                    <div class="mt-6 relative h-16 overflow-hidden">
+                        <svg class="absolute bottom-0 text-orange-100 w-full" height="50" viewBox="0 0 100 40" preserveAspectRatio="none">
+                            <path d="M0 40 Q 25 10 50 25 T 100 20" fill="none" stroke="currentColor" stroke-width="4" class=""></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-cyan-50 flex items-center justify-center text-cyan-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:lock-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">Ika MPC Network</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Non-custodial settlement across chains with secure distributed signing infrastructure (2PC-MPC).
+                        </p>
+                    </div>
+                    <div class="mt-6 flex justify-center">
+                         <div class="relative w-24 h-12 overflow-hidden">
+                            <div class="absolute w-20 h-20 border-[8px] border-cyan-50 rounded-full top-0 left-2"></div>
+                            <div class="absolute w-20 h-20 border-[8px] border-transparent border-t-cyan-500 border-l-cyan-500 rounded-full top-0 left-2 rotate-45 transition-all duration-1000 group-hover:rotate-90"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-teal-50 flex items-center justify-center text-teal-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:shield-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">Non-custodial exchange</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Retain users's custody of assets on native chains while trading with the speed and UX of a centralized platform.
+                        </p>
+                    </div>
+                    <div class="mt-6 flex justify-center opacity-60">
+                        <div class="flex gap-1">
+                             <div class="w-3 h-3 rounded-full bg-teal-200"></div>
+                             <div class="w-3 h-3 rounded-full bg-teal-200"></div>
+                             <div class="w-3 h-3 rounded-full bg-teal-500"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-white rounded-[2rem] p-7 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] border border-gray-100 flex flex-col justify-between group hover:shadow-[0_8px_30px_rgba(0,0,0,0.04)] transition-all duration-300 hover:-translate-y-1">
+                    <div class="space-y-3">
+                        <div class="w-10 h-10 rounded-xl bg-pink-50 flex items-center justify-center text-pink-600 group-hover:scale-110 transition-transform duration-300">
+                            <iconify-icon icon="solar:magic-stick-3-linear" width="20" height="20" stroke-width="1.5"></iconify-icon>
+                        </div>
+                        <h3 class="text-lg font-semibold tracking-tight text-gray-900">Hand-on Features</h3>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            zkLogin, Address Book, Magic Links, Private Transfer...
+                        </p>
+                    </div>
+                    <div class="mt-6 flex justify-end">
+                        <div class="w-12 h-12 bg-pink-50 rounded-full flex items-center justify-center animate-pulse">
+                             <span class="text-[10px] font-bold text-pink-500 uppercase">New</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="bg-white w-full border-gray-100 border rounded-[2.5rem] pt-10 pr-10 pb-10 pl-10 shadow-[0_2px_40px_-10px_rgba(0,0,0,0.04)]">
+             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-100 text-center gap-x-8 gap-y-8">
+                <div class="md:pt-0 pt-4">
+                    <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">$17B+</div>
+                    <div class="uppercase text-sm font-medium text-gray-500 tracking-normal">Volume Processed</div>
+                </div>
+                <div class="pt-4 md:pt-0">
+                    <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">5.9M</div>
+                    <div class="uppercase text-sm font-medium text-gray-500 tracking-tight">Wallets Served</div>
+                </div>
+                <div class="md:pt-0 pt-4">
+                    <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">#2</div>
+                    <div class="uppercase text-sm font-medium text-gray-500 tracking-tight">DEX Aggregator on Sui</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="text-center pt-2 space-y-6">
+            <div class="space-y-2">
+                 <div class="inline-flex text-[10px] uppercase text-xs font-bold text-blue-600 tracking-normal bg-blue-50 border-blue-100 border rounded-full mb-2 pt-1 pr-3 pb-1 pl-3 items-center">
+                    Early Access
+                </div>
+                <h2 class="text-3xl font-semibold text-gray-900 tracking-tighter md:text-6xl">Be First in line!</h2>
+                <p class="text-base text-gray-500 max-w-md mx-auto">
+                    Join the waitlist and get early access when we launch. Limited spots available.
+                </p>
+            </div>
+            <button onclick="toggleModal(true)" class="bg-[#111] text-white px-8 py-3 rounded-full text-base font-medium hover:bg-gray-800 transition-all shadow-lg hover:-translate-y-0.5 active:scale-95">
+                Join Waitlist
+            </button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-gray-200 bg-white py-10 mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="text-sm text-gray-500 font-medium">
+                © 2026 7K DeFi. Building the future of DeFi on Sui.
+            </div>
+            <div class="flex gap-8 items-center">
+                
+                <!-- Icon 1: X (Twitter) -->
+                <a href="https://x.com/7k_ag_" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-colors">
+                    <div class="w-6 h-6 flex items-center justify-center">
+    <svg viewBox="0 0 1226.37 1226.37" fill="currentColor" class="w-full h-full object-contain scale-[0.8] origin-center text-gray-400 hover:text-black transition-colors">
+        <path d="m727.348 519.284 446.727-519.284h-105.86l-387.893 450.887-309.809-450.887h-357.328l468.492 681.821-468.492 544.549h105.866l409.625-476.152 327.181 476.152h357.328l-485.863-707.086zm-144.998 168.544-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721h-162.604l-323.311-462.446z"></path>
+    </svg>
+</div>
+                </a>
+
+                <!-- Icon 2: Discord -->
+                <a href="https://discord.gg/pM56FnXDFb" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-colors">
+                     <div class="w-6 h-6 flex items-center justify-center">
+                        <svg version="1.1" viewBox="0 0 512 512" fill="currentColor" class="w-full h-full object-contain">
+                            <path d="M433.43,93.222c-32.633-14.973-67.627-26.005-104.216-32.324c-0.666-0.122-1.332,0.183-1.675,0.792   c-4.501,8.005-9.486,18.447-12.977,26.655c-39.353-5.892-78.505-5.892-117.051,0c-3.492-8.39-8.658-18.65-13.179-26.655   c-0.343-0.589-1.009-0.894-1.675-0.792c-36.568,6.298-71.562,17.33-104.216,32.324c-0.283,0.122-0.525,0.325-0.686,0.589   c-66.376,99.165-84.56,195.893-75.64,291.421c0.04,0.467,0.303,0.914,0.666,1.198c43.793,32.161,86.215,51.685,127.848,64.627   c0.666,0.203,1.372-0.04,1.796-0.589c9.848-13.449,18.627-27.63,26.154-42.543c0.444-0.873,0.02-1.909-0.888-2.255   c-13.925-5.282-27.184-11.723-39.939-19.036c-1.009-0.589-1.09-2.032-0.161-2.723c2.684-2.011,5.369-4.104,7.932-6.217   c0.464-0.386,1.11-0.467,1.655-0.224c83.792,38.257,174.507,38.257,257.31,0c0.545-0.264,1.191-0.182,1.675,0.203   c2.564,2.113,5.248,4.226,7.952,6.237c0.928,0.691,0.867,2.134-0.141,2.723c-12.755,7.456-26.014,13.754-39.959,19.016   c-0.908,0.345-1.312,1.402-0.867,2.275c7.689,14.892,16.468,29.073,26.134,42.523c0.404,0.569,1.13,0.813,1.796,0.609   c41.835-12.941,84.257-32.466,128.05-64.627c0.384-0.284,0.626-0.711,0.666-1.178c10.676-110.441-17.881-206.376-75.7-291.421   C433.954,93.547,433.712,93.344,433.43,93.222z M171.094,327.065c-25.227,0-46.014-23.16-46.014-51.604   s20.383-51.604,46.014-51.604c25.831,0,46.417,23.364,46.013,51.604C217.107,303.905,196.723,327.065,171.094,327.065z    M341.221,327.065c-25.226,0-46.013-23.16-46.013-51.604s20.383-51.604,46.013-51.604c25.832,0,46.417,23.364,46.014,51.604   C387.235,303.905,367.054,327.065,341.221,327.065z"></path>
+                        </svg>
+                     </div>
+                </a>
+                
+                <!-- Icon 3: 7K -->
+                <a href="https://7k.ag" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-gray-900 transition-colors">
+                    <div class="w-6 h-6 flex items-center justify-center">
+                        <svg viewBox="0 0 112 122" fill="currentColor" class="w-full h-full object-contain">
+                            <path d="M76.4132 0.19725C77.9165 -0.52845 79.5689 0.863691 79.1363 2.49141L66.9239 48.4398C67.1021 48.5292 67.2673 48.6464 67.4129 48.7888L68.5459 49.8966L87.5923 31.5057C87.9551 31.1554 88.4372 30.96 88.9386 30.96H110.046C111.805 30.96 112.665 33.1325 111.392 34.3618L81.8413 62.8956L110.07 90.4953C111.331 91.7285 110.469 93.8886 108.715 93.8886H88.3514C87.8507 93.8886 87.3691 93.6937 87.0065 93.3442L61.5074 68.7688L51.5812 105.776C51.4602 106.227 51.1849 106.62 50.8044 106.885L29.604 121.645C28.1116 122.684 26.1477 121.282 26.6141 119.511L55.1188 11.246C55.2659 10.6871 55.6478 10.2217 56.1636 9.97272L76.4132 0.19725Z" fill="currentColor"></path>
+                            <path d="M27.0095 94.3579C27.8931 94.3579 28.6663 93.7567 28.894 92.8927L44.1065 35.159C44.4367 33.906 43.5035 32.6767 42.2221 32.6767H5.27432C4.39743 32.6767 3.62836 33.2689 3.3946 34.1243L0.0717075 46.2824C-0.271892 47.5396 0.662538 48.7823 1.95143 48.7823H20.2218C21.5006 48.7823 22.4333 50.0069 22.1079 51.2584L11.5447 91.8818C11.2192 93.1333 12.152 94.3579 13.4307 94.3579H27.0095Z" fill="currentColor"></path>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Implementation -->
+    <!-- Overlay -->
+    <div id="modal-overlay" class="fixed inset-0 z-50 bg-[#F9FAFB]/80 backdrop-blur-md transition-all duration-300 overlay-enter" onclick="toggleModal(false)"></div>
+    
+    <!-- Modal Content -->
+    <div id="modal-content" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[51] w-full max-w-sm px-4 transition-all duration-300 modal-enter">
+        <div class="bg-white rounded-[2rem] shadow-[0_20px_60px_-15px_rgba(0,0,0,0.1)] p-8 md:p-10 flex flex-col items-center text-center relative overflow-hidden border border-gray-100 min-h-[420px] justify-center">
+            
+            <!-- Close Button -->
+            <button onclick="toggleModal(false)" class="absolute top-4 right-4 w-8 h-8 flex items-center justify-center text-gray-400 hover:text-gray-600 transition-colors rounded-full hover:bg-gray-100" aria-label="Close modal">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            
+            <!-- Form State -->
+            <div id="modal-form" class="w-full flex flex-col items-center transition-opacity duration-300 opacity-100">
+                <!-- Modal Logo -->
+                <div class="mb-6">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0b2e12d6-456f-4c10-9db1-e243c0d82ac6_320w.png" alt="7K" class="h-10 w-auto object-contain">
+                </div>
+
+                <!-- Title -->
+                <h3 id="dynamic-url" class="text-3xl font-bold tracking-tight text-gray-900 mb-2">mobile.7k.ag/you</h3>
+                
+                <!-- Subtitle -->
+                <p class="font-quicksand text-base text-gray-500 font-medium mb-8 leading-snug max-w-[260px]">
+                    Enter your info &amp; we'll contact you the instant we launch
+                </p>
+
+                <!-- Inputs -->
+                <div class="w-full space-y-4">
+                    <input id="waitlist-email" type="email" placeholder="Enter your Email" class="w-full px-5 py-3.5 rounded-xl border-2 border-black text-gray-900 placeholder:text-gray-500 font-medium focus:outline-none focus:ring-0 transition-colors bg-white" required>
+                    
+                    <div class="relative w-full">
+                        <input id="waitlist-username" type="text" placeholder="Your Username" class="w-full pl-5 pr-14 py-3.5 rounded-xl border-2 border-black text-gray-900 placeholder:text-gray-500 font-medium focus:outline-none focus:ring-0 transition-colors bg-white" required>
+                        <button onclick="submitForm()" class="absolute right-2 top-1/2 -translate-y-1/2 bg-[#111] text-white p-2 rounded-lg hover:bg-gray-800 transition-colors">
+                            <iconify-icon icon="solar:arrow-right-linear" width="16" height="16" stroke-width="2.5"></iconify-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Success State (Modified) -->
+            <div id="modal-success" class="w-full flex-col items-center hidden opacity-0 transition-opacity duration-300 absolute inset-0 justify-center p-8 text-center">
+                <!-- Logo -->
+                <div class="mb-8">
+                    <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/0b2e12d6-456f-4c10-9db1-e243c0d82ac6_320w.png" alt="7K" class="h-10 w-auto object-contain">
+                </div>
+                
+                <!-- Title (Centered) -->
+                <h3 class="text-3xl font-semibold tracking-tight text-gray-900 mb-4">Thank you!</h3>
+                
+                <!-- Subtext (Centered) -->
+                <p class="font-quicksand text-base text-gray-500 font-medium mb-10 leading-snug max-w-[280px] mx-auto">
+                    Your spot in the future of Sui is reserved. We'll send an invite to your inbox as soon as we're ready for you.
+                </p>
+
+                <!-- Close Button -->
+                <button onclick="toggleModal(false)" class="transition-all duration-300 active:scale-95 hover:bg-black hover:text-white hover:shadow-[0_0_20px_rgba(0,0,0,0.15)] text-sm font-semibold text-black bg-white border-black border-2 rounded-full px-10 py-2.5 shadow-none">
+                    Close
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function toggleModal(show) {
+            const overlay = document.getElementById('modal-overlay');
+            const content = document.getElementById('modal-content');
+            const form = document.getElementById('modal-form');
+            const success = document.getElementById('modal-success');
+            
+            if (show) {
+                // Reset to form state when opening
+                form.classList.remove('hidden', 'opacity-0');
+                form.classList.add('flex', 'opacity-100');
+                
+                success.classList.add('hidden', 'opacity-0');
+                success.classList.remove('flex', 'opacity-100');
+
+                overlay.classList.remove('overlay-enter');
+                overlay.classList.add('overlay-active');
+                content.classList.remove('modal-enter');
+                content.classList.add('modal-active');
+                
+                // Reset URL to default when opening modal
+                const dynamicUrl = document.getElementById('dynamic-url');
+                const usernameInput = document.getElementById('waitlist-username');
+                if (dynamicUrl && usernameInput) {
+                    usernameInput.value = '';
+                    dynamicUrl.textContent = 'mobile.7k.ag/you';
+                }
+            } else {
+                overlay.classList.remove('overlay-active');
+                overlay.classList.add('overlay-enter');
+                content.classList.remove('modal-active');
+                content.classList.add('modal-enter');
+            }
+        }
+
+        // Update URL dynamically as user types username
+        (function() {
+            const usernameInput = document.getElementById('waitlist-username');
+            const dynamicUrl = document.getElementById('dynamic-url');
+            
+            if (usernameInput && dynamicUrl) {
+                usernameInput.addEventListener('input', function(e) {
+                    const username = e.target.value.trim();
+                    if (username) {
+                        // Sanitize username for URL (remove spaces, special chars, keep only alphanumeric, hyphens, underscores)
+                        const sanitizedUsername = username.toLowerCase().replace(/[^a-z0-9_-]/g, '');
+                        dynamicUrl.textContent = sanitizedUsername ? `mobile.7k.ag/${sanitizedUsername}` : 'mobile.7k.ag/you';
+                    } else {
+                        dynamicUrl.textContent = 'mobile.7k.ag/you';
+                    }
+                });
+            }
+        })();
+
+        // Rate limiting to prevent abuse and stay within free tier limits
+        let lastSubmissionTime = 0;
+        const MIN_SUBMISSION_INTERVAL = 5000; // 5 seconds between submissions
+        let submissionInProgress = false;
+
+        async function submitForm() {
+            // Prevent multiple simultaneous submissions
+            if (submissionInProgress) {
+                return;
+            }
+
+            // Rate limiting: prevent rapid submissions
+            const now = Date.now();
+            if (lastSubmissionTime > 0 && (now - lastSubmissionTime) < MIN_SUBMISSION_INTERVAL) {
+                const waitTime = Math.ceil((MIN_SUBMISSION_INTERVAL - (now - lastSubmissionTime)) / 1000);
+                alert(`Please wait ${waitTime} second${waitTime > 1 ? 's' : ''} before submitting again.`);
+                return;
+            }
+
+            const form = document.getElementById('modal-form');
+            const success = document.getElementById('modal-success');
+            const emailInput = document.getElementById('waitlist-email');
+            const usernameInput = document.getElementById('waitlist-username');
+            
+            // Get form values
+            const email = emailInput.value.trim();
+            const username = usernameInput.value.trim();
+            
+            // Validate inputs
+            if (!email || !username) {
+                alert('Please fill in both email and username');
+                return;
+            }
+            
+            // Validate email format
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Please enter a valid email address');
+                return;
+            }
+
+            // Mark submission as in progress
+            submissionInProgress = true;
+            lastSubmissionTime = now;
+            
+            // Disable submit button during submission
+            const submitBtn = form.querySelector('button[onclick="submitForm()"]');
+            if (submitBtn) {
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.5';
+            }
+            
+            try {
+                // Send data to API
+                const response = await fetch('/api/submit-waitlist', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        email: email,
+                        username: username,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+                
+                const responseData = await response.json();
+                
+                if (!response.ok) {
+                    console.error('API Error:', responseData);
+                    throw new Error(responseData.error || 'Failed to submit');
+                }
+                
+                console.log('Success:', responseData);
+                
+                // Success - show success message
+                form.classList.remove('opacity-100');
+                form.classList.add('opacity-0');
+
+                setTimeout(() => {
+                    // Hide form, show success container
+                    form.classList.remove('flex');
+                    form.classList.add('hidden');
+                    
+                    success.classList.remove('hidden');
+                    success.classList.add('flex');
+                    
+                    // Trigger reflow
+                    void success.offsetWidth;
+
+                    // Fade in success
+                    success.classList.remove('opacity-0');
+                    success.classList.add('opacity-100');
+                    
+                    // Reset form
+                    emailInput.value = '';
+                    usernameInput.value = '';
+                }, 300);
+                
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                console.error('Error details:', {
+                    message: error.message,
+                    stack: error.stack
+                });
+                alert('Failed to submit: ' + error.message + '\n\nCheck browser console (F12) for details.');
+                
+                // Re-enable submit button
+                if (submitBtn) {
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }
+            } finally {
+                // Always reset submission flag
+                submissionInProgress = false;
+            }
+        }
+
+        // Phone Crack Easter Egg
+        let tapCount = 0;
+        const maxTaps = 7; // Number of cracks to show
+        const explosionTap = 8; // Tap number that triggers explosion
+        
+        // Wait for DOM to be ready
+        const phoneContainer = document.getElementById('phone-container');
+        const phoneImage = document.getElementById('phone-image');
+        const crackOverlayContainer = document.getElementById('crack-overlay-container');
+        const explosionEffect = document.getElementById('explosion-effect');
+        
+        // Verify elements exist
+        if (!phoneContainer || !phoneImage || !crackOverlayContainer || !explosionEffect) {
+            console.error('Phone elements not found!', {
+                phoneContainer: !!phoneContainer,
+                phoneImage: !!phoneImage,
+                crackOverlayContainer: !!crackOverlayContainer,
+                explosionEffect: !!explosionEffect
+            });
+        }
+
+        // Varying sizes for cracks to reduce overlap and create visual interest
+        const crackScales = [0.3, 0.32, 0.28, 0.3, 0.28, 0.32, 0.3];
+        
+        // Progressive opacity levels for each crack instance
+        // First 3: bolder (higher opacity), Last 3: lower opacity
+        const crackOpacities = [0.5, 0.55, 0.6, 0.6, 0.5, 0.55, 0.6];
+        
+        // Predefined positions for cracks - better spread to avoid overlap
+        const crackPositions = [
+            { x: '15%', y: '20%' },   // Top-left corner
+            { x: '50%', y: '15%' },   // Top-center
+            { x: '85%', y: '25%' },   // Top-right corner
+            { x: '20%', y: '50%' },   // Left-center
+            { x: '80%', y: '55%' },   // Right-center
+            { x: '35%', y: '80%' },   // Bottom-left area
+            { x: '65%', y: '85%' }    // Bottom-right area
+        ];
+
+        function handlePhoneTap(event) {
+            tapCount++;
+            
+            if (tapCount <= maxTaps) {
+                // Create a new crack instance at a different position
+                const position = crackPositions[tapCount - 1];
+                const scale = crackScales[tapCount - 1];
+                
+                // Create crack wrapper
+                const crackWrapper = document.createElement('div');
+                crackWrapper.className = 'crack-instance';
+                crackWrapper.style.position = 'absolute';
+                crackWrapper.style.left = position.x;
+                crackWrapper.style.top = position.y;
+                crackWrapper.style.transform = `translate(-50%, -50%) scale(${scale})`;
+                crackWrapper.style.opacity = crackOpacities[tapCount - 1];
+                crackWrapper.style.transition = 'opacity 0.5s ease-in-out';
+                crackWrapper.style.width = '120%';
+                crackWrapper.style.height = '120%';
+                crackWrapper.style.pointerEvents = 'none';
+                crackWrapper.style.transformOrigin = 'center center';
+                
+                // Add image.png crack
+                const crackImage1 = document.createElement('img');
+                crackImage1.src = 'images/image.png';
+                crackImage1.className = 'crack-image';
+                crackImage1.style.width = '100%';
+                crackImage1.style.height = '100%';
+                crackImage1.style.objectFit = 'cover';
+                crackImage1.style.objectPosition = 'center';
+                crackImage1.style.mixBlendMode = 'multiply';
+                crackImage1.style.filter = 'contrast(1.1) brightness(0.95)';
+                
+                crackWrapper.appendChild(crackImage1);
+                
+                // Add crack-texture for taps 3-7
+                if (tapCount >= 3) {
+                    const crackImage2 = document.createElement('img');
+                    crackImage2.src = 'images/crack-texture-png-free-thumb22.png';
+                    crackImage2.className = 'crack-image';
+                    crackImage2.style.position = 'absolute';
+                    crackImage2.style.top = '0';
+                    crackImage2.style.left = '0';
+                    crackImage2.style.width = '100%';
+                    crackImage2.style.height = '100%';
+                    crackImage2.style.objectFit = 'cover';
+                    crackImage2.style.objectPosition = 'center';
+                    crackImage2.style.mixBlendMode = 'multiply';
+                    crackImage2.style.filter = 'contrast(1.1) brightness(0.95)';
+                    crackImage2.style.opacity = Math.min(0.9, (tapCount - 2) * 0.15);
+                    
+                    crackWrapper.appendChild(crackImage2);
+                }
+                
+                crackOverlayContainer.appendChild(crackWrapper);
+                
+                // Add shake effect
+                phoneImage.style.animation = 'shake 0.3s';
+                setTimeout(() => {
+                    phoneImage.style.animation = '';
+                }, 300);
+                
+                // Add flash effect
+                const flash = document.createElement('div');
+                flash.className = 'phone-flash';
+                phoneContainer.appendChild(flash);
+                setTimeout(() => {
+                    flash.remove();
+                }, 200);
+            }
+            
+            // Check if this tap should trigger explosion (separate tap after all cracks)
+            if (tapCount === explosionTap) {
+                setTimeout(() => {
+                    explodePhone();
+                }, 500);
+            }
+        }
+
+        function explodePhone() {
+            // Hide scrollbar immediately when explosion starts
+            document.documentElement.classList.add('hide-scrollbar');
+            document.body.classList.add('hide-scrollbar');
+            
+            // Get phone position immediately for seamless overflow start
+            const phoneRect = phoneContainer.getBoundingClientRect();
+            const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+            
+            // Calculate the maximum distance from phone center to screen corners
+            const phoneCenterX = phoneRect.left + phoneRect.width / 2;
+            const phoneCenterY = phoneRect.top + phoneRect.height / 2;
+            
+            const maxDistance = Math.sqrt(
+                Math.pow(Math.max(phoneCenterX, viewportWidth - phoneCenterX), 2) +
+                Math.pow(Math.max(phoneCenterY, viewportHeight - phoneCenterY), 2)
+            );
+            
+            // Create color overflow effect - initially invisible, starts as tiny dot
+            const colorOverflow = document.createElement('div');
+            colorOverflow.id = 'color-overflow';
+            colorOverflow.style.position = 'fixed';
+            colorOverflow.style.left = phoneCenterX + 'px';
+            colorOverflow.style.top = phoneCenterY + 'px';
+            colorOverflow.style.width = '10px'; // Start as tiny dot
+            colorOverflow.style.height = '10px'; // Start as tiny dot
+            colorOverflow.style.backgroundColor = '#6265ff';
+            colorOverflow.style.borderRadius = '50%';
+            colorOverflow.style.transform = 'translate(-50%, -50%)';
+            colorOverflow.style.zIndex = '9999';
+            colorOverflow.style.opacity = '0'; // Start invisible
+            colorOverflow.style.transition = 'opacity 0.3s ease-in'; // Smooth fade-in transition
+
+            document.body.appendChild(colorOverflow);
+
+            // Make overflow visible when shake/tilt animation completes, then start expansion
+            setTimeout(() => {
+                colorOverflow.style.opacity = '1'; // Fade in when shake is done
+
+                // Start expansion immediately after becoming visible
+                setTimeout(() => {
+                    // Calculate size to fill a 27-inch screen (16:9 aspect ratio)
+                    // 27-inch diagonal ≈ 2560x1440px resolution
+                    // Diagonal size needed: ~2600px to ensure full coverage
+                    const finalSize = 2600; // Fixed size for 27-inch screen
+                    colorOverflow.style.transition = 'width 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-radius 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    colorOverflow.style.width = finalSize + 'px';
+                    colorOverflow.style.height = finalSize + 'px';
+                    colorOverflow.style.borderRadius = '0';
+                }, 100); // Brief pause after fade-in before expanding
+            }, 300); // Wait for shake animation to complete
+            
+            // Create explosion particles simultaneously with overflow
+            explosionEffect.innerHTML = '';
+            explosionEffect.style.opacity = '1';
+            explosionEffect.style.transition = 'opacity 0.3s ease-in';
+            
+            // Create multiple particle divs with staggered timing for smoother effect
+            for (let i = 0; i < 30; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'explosion-particle';
+                const centerX = 50; // Center of phone
+                const centerY = 50;
+                const angle = Math.random() * Math.PI * 2;
+                const distance = 50 + Math.random() * 50;
+                const randomX = centerX + Math.cos(angle) * distance;
+                const randomY = centerY + Math.sin(angle) * distance;
+                
+                particle.style.left = '50%';
+                particle.style.top = '50%';
+                particle.style.setProperty('--random-x', (randomX / 100));
+                particle.style.setProperty('--random-y', (randomY / 100));
+                particle.style.animationDelay = (Math.random() * 0.15) + 's';
+                particle.style.opacity = '0';
+                explosionEffect.appendChild(particle);
+                
+                // Fade in particles smoothly
+                setTimeout(() => {
+                    particle.style.transition = 'opacity 0.2s ease-in';
+                    particle.style.opacity = '1';
+                }, i * 10);
+            }
+            
+            // Smoothly hide phone with explosion
+            phoneImage.style.transition = 'opacity 0.4s ease-out, transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1)';
+            phoneImage.style.opacity = '0';
+            phoneImage.style.transform = 'scale(1.3) rotate(15deg)';
+            
+            // Hide all crack instances smoothly
+            const phoneScreenContainer = document.getElementById('phone-screen-container');
+            if (phoneScreenContainer) {
+                phoneScreenContainer.style.transition = 'opacity 0.4s ease-out';
+                phoneScreenContainer.style.opacity = '0';
+            }
+            
+            // Hide all individual crack instances smoothly
+            const crackInstances = document.querySelectorAll('.crack-instance');
+            crackInstances.forEach((instance, index) => {
+                instance.style.transition = `opacity ${0.3 + index * 0.05}s ease-out`;
+                instance.style.opacity = '0';
+            });
+            
+            // Water rising effect immediately after overflow completes (minimal wait time)
+            setTimeout(() => {
+                // Re-get viewport dimensions for water rising
+                const viewportWidth = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+                const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+                
+                // Main water container
+                const waterRising = document.createElement('div');
+                waterRising.id = 'water-rising';
+                waterRising.style.position = 'fixed';
+                waterRising.style.bottom = '0';
+                waterRising.style.left = '0';
+                waterRising.style.width = viewportWidth + 'px';
+                waterRising.style.height = '0px';
+                waterRising.style.zIndex = '10000';
+                waterRising.style.transition = 'height 6s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                waterRising.style.willChange = 'height';
+                waterRising.style.overflow = 'hidden';
+                
+                // Water gradient background (darker at bottom, slightly lighter at top)
+                waterRising.style.background = 'linear-gradient(to top, #0b0d14 0%, #0f1118 30%, #13151c 60%, #0b0d14 100%)';
+                
+                // Wave surface effect - realistic water waves
+                const waveSurface = document.createElement('div');
+                waveSurface.className = 'water-wave-surface';
+                waveSurface.style.position = 'absolute';
+                waveSurface.style.top = '0';
+                waveSurface.style.left = '0';
+                waveSurface.style.width = '100%';
+                waveSurface.style.height = '80px';
+                // Multi-layer wave pattern with gradient
+                waveSurface.style.background = `
+                    linear-gradient(to bottom, rgba(11, 13, 20, 0.4) 0%, rgba(11, 13, 20, 0.2) 30%, rgba(11, 13, 20, 0.05) 70%, transparent 100%),
+                    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 80'%3E%3Cpath d='M0,40 Q100,20 200,40 T400,40 L400,80 L0,80 Z' fill='rgba(11,13,20,0.15)'/%3E%3Cpath d='M0,50 Q100,30 200,50 T400,50 L400,80 L0,80 Z' fill='rgba(11,13,20,0.1)'/%3E%3C/svg%3E")
+                `;
+                waveSurface.style.backgroundSize = '400px 80px, 400px 80px';
+                waveSurface.style.backgroundRepeat = 'repeat-x';
+                waveSurface.style.backgroundPosition = '0 0, 0 0';
+                waveSurface.style.animation = 'water-wave 3s ease-in-out infinite';
+                waveSurface.style.pointerEvents = 'none';
+                waveSurface.style.filter = 'blur(0.5px)';
+                
+                // Ripple effect layer
+                const rippleLayer = document.createElement('div');
+                rippleLayer.className = 'water-ripples';
+                rippleLayer.style.position = 'absolute';
+                rippleLayer.style.top = '0';
+                rippleLayer.style.left = '0';
+                rippleLayer.style.width = '100%';
+                rippleLayer.style.height = '100%';
+                rippleLayer.style.background = 'radial-gradient(ellipse at center, transparent 0%, rgba(11, 13, 20, 0.1) 50%, transparent 100%)';
+                rippleLayer.style.backgroundSize = '400px 400px';
+                rippleLayer.style.animation = 'water-ripple 4s ease-in-out infinite';
+                rippleLayer.style.pointerEvents = 'none';
+                rippleLayer.style.opacity = '0.6';
+                
+                waterRising.appendChild(waveSurface);
+                waterRising.appendChild(rippleLayer);
+                document.body.appendChild(waterRising);
+                
+                // Trigger water rise
+                setTimeout(() => {
+                    waterRising.style.height = viewportHeight + 'px';
+                }, 10);
+                
+                // Display first quote after 3 seconds
+                setTimeout(() => {
+                    const quoteContainer = document.createElement('div');
+                    quoteContainer.id = 'water-quote-1';
+                    quoteContainer.style.position = 'fixed';
+                    quoteContainer.style.top = '50%';
+                    quoteContainer.style.left = '50%';
+                    quoteContainer.style.transform = 'translate(-50%, -50%)';
+                    quoteContainer.style.zIndex = '10001';
+                    quoteContainer.style.textAlign = 'center';
+                    quoteContainer.style.color = '#ffffff';
+                    quoteContainer.style.fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif";
+                    quoteContainer.style.fontWeight = '600';
+                    quoteContainer.style.letterSpacing = '-0.02em';
+                    quoteContainer.style.opacity = '0';
+                    quoteContainer.style.transition = 'opacity 1.5s ease-in';
+                    quoteContainer.style.pointerEvents = 'none';
+                    
+                    const quoteText = document.createElement('div');
+                    quoteText.style.fontSize = 'clamp(1.5rem, 4vw, 3rem)';
+                    quoteText.style.lineHeight = '1.2';
+                    quoteText.style.marginBottom = '1rem';
+                    quoteText.textContent = 'So you still like the web version more, don\'t you?';
+                    
+                    const quoteAuthor = document.createElement('div');
+                    quoteAuthor.style.fontSize = 'clamp(1rem, 2vw, 1.5rem)';
+                    quoteAuthor.style.opacity = '0.8';
+                    quoteAuthor.style.fontWeight = '500';
+                    quoteAuthor.textContent = '- 7K Team';
+                    
+                    quoteContainer.appendChild(quoteText);
+                    quoteContainer.appendChild(quoteAuthor);
+                    document.body.appendChild(quoteContainer);
+                    
+                    // Fade in first quote
+                    setTimeout(() => {
+                        quoteContainer.style.opacity = '1';
+                    }, 100);
+                    
+                    // Display second quote after first quote fades in
+                    setTimeout(() => {
+                        // Fade out first quote
+                        quoteContainer.style.transition = 'opacity 1s ease-out';
+                        quoteContainer.style.opacity = '0';
+                        
+                        // Show second quote
+                        setTimeout(() => {
+                            const quoteContainer2 = document.createElement('div');
+                            quoteContainer2.id = 'water-quote-2';
+                            quoteContainer2.style.position = 'fixed';
+                            quoteContainer2.style.top = '50%';
+                            quoteContainer2.style.left = '50%';
+                            quoteContainer2.style.transform = 'translate(-50%, -50%)';
+                            quoteContainer2.style.zIndex = '10001';
+                            quoteContainer2.style.textAlign = 'center';
+                            quoteContainer2.style.color = '#ffffff';
+                            quoteContainer2.style.fontFamily = "'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif";
+                            quoteContainer2.style.fontWeight = '600';
+                            quoteContainer2.style.letterSpacing = '-0.02em';
+                            quoteContainer2.style.opacity = '0';
+                            quoteContainer2.style.transition = 'opacity 1.5s ease-in';
+                            quoteContainer2.style.pointerEvents = 'none';
+                            
+                            const quoteText2 = document.createElement('div');
+                            quoteText2.style.fontSize = 'clamp(1.5rem, 4vw, 3rem)';
+                            quoteText2.style.lineHeight = '1.2';
+                            quoteText2.textContent = 'Welcome back, fren!';
+                            
+                            quoteContainer2.appendChild(quoteText2);
+                            document.body.appendChild(quoteContainer2);
+                            
+                            // Fade in second quote
+                            setTimeout(() => {
+                                quoteContainer2.style.opacity = '1';
+                            }, 100);
+                            
+                            // Fade out second quote and redirect
+                            setTimeout(() => {
+                                quoteContainer2.style.transition = 'opacity 1s ease-out';
+                                quoteContainer2.style.opacity = '0';
+                                
+                                // Redirect after fade out completes
+                                setTimeout(() => {
+                                    window.location.href = 'https://7k.ag';
+                                }, 1000);
+                            }, 3000); // Show quote for 3 seconds (1 second longer), then fade out
+                        }, 1000); // Wait for first quote to fade out
+                    }, 3500); // Show second quote after first quote is visible for longer (1 second longer)
+                }, 3000); // First quote appears after 3 seconds
+            }, 2500 + 100); // Start immediately after overflow completes (overflow: 2.5s + 0.1s minimal delay for smooth transition)
+        }
+
+        // Add click event listener
+        if (phoneContainer) {
+            phoneContainer.addEventListener('click', handlePhoneTap);
+            console.log('Phone tap listener attached');
+        } else {
+            console.error('Cannot attach tap listener - phoneContainer not found');
+        }
+    </script>
+
+</body></html>

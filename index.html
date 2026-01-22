@@ -24,7 +24,7 @@
     <nav class="flex sticky z-40 transition-all duration-300 bg-transparent w-full max-w-7xl border-transparent pt-4 pr-6 pb-4 pl-6 top-0 items-center justify-between">
         <!-- Logo -->
         <a href="#" class="block">
-            <img src="images/7k-mobile-logo-full.png" alt="7K Mobile" class="w-auto h-16 md:h-28 object-cover">
+            <img src="images/7k-mobile-logo-full.png" alt="7K Mobile" class="w-auto h-8 md:h-14 object-cover">
         </a>
         
         <!-- Button -->
@@ -41,7 +41,7 @@
             <div class="flex flex-col lg:flex-row lg:items-start gap-8 mb-16 gap-x-8 gap-y-8 justify-between">
                 <!-- Left: Headline -->
                 <div class="lg:w-[60%] space-y-4">
-                    <span class="text-[10px] uppercase text-sm font-semibold text-gray-600 tracking-normal bg-white border-gray-200 border rounded-full pt-0.5 pr-3 pb-0.5 pl-3 shadow-sm">Coming q1 2026 - Sui ecosystem</span><h1 class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">Universal Reach,<br> <span class="xl:bg-clip-text xl:text-transparent">with Sui Speed.</span></h1>
+                    <span class="text-[10px] uppercase text-sm font-semibold text-gray-600 tracking-normal bg-white border-gray-200 border rounded-full pt-0.5 pr-3 pb-0.5 pl-3 shadow-sm">Coming q1 2026 - Sui ecosystem</span><h1 class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">7K Mobile<br> <span class="xl:bg-clip-text xl:text-transparent md:text-5xl text-3xl">Universal Reach, with Sui Speed.</span></h1>
                 </div>
                 
                 <!-- Right: Subtext & CTA -->
@@ -72,6 +72,12 @@
                     
                     <!-- Explosion Effect -->
                     <div id="explosion-effect" class="absolute inset-0 pointer-events-none z-30 opacity-0"></div>
+                    
+                    <!-- Hint Bubble -->
+                    <div id="phone-hint-bubble" class="absolute bottom-full left-1/2 -translate-x-1/2 mb-4 px-4 py-2 bg-gray-900 text-white text-sm rounded-full opacity-0 pointer-events-none transition-opacity duration-300 whitespace-nowrap z-40">
+                        Try tapping?
+                        <div class="absolute top-full left-1/2 -translate-x-1/2 border-4 border-transparent border-t-gray-900"></div>
+                    </div>
                 </div>
 
                 <!-- Floating Feature Badge 1 -->
@@ -105,9 +111,7 @@
         <!-- Features Section -->
         <section class="flex flex-col items-center">
             <div class="text-center space-y-3 mb-10 max-w-2xl">
-                <h2 class="text-3xl font-semibold text-gray-900 tracking-tighter md:text-6xl flex items-center justify-center gap-3 flex-wrap">
-                    Why <img src="images/7k-mobile-logo-full.png" alt="7K Mobile" class="h-16 md:h-28 w-auto object-contain inline-block">?
-                </h2>
+                <h2 class="text-3xl font-semibold text-gray-900 tracking-tighter md:text-6xl">Why 7K Mobile?</h2>
                 <p class="text-base text-gray-500">
                     Built different. Built native. Built for power users who demand speed.
                 </p>
@@ -231,7 +235,7 @@
 
         <!-- Stats Section -->
         <section class="bg-white w-full border-gray-100 border rounded-[2.5rem] pt-10 pr-10 pb-10 pl-10 shadow-[0_2px_40px_-10px_rgba(0,0,0,0.04)]">
-             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-100 text-center gap-x-8 gap-y-8">
+             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 divide-y md:divide-y-0 md:divide-x divide-gray-100 text-center gap-x-8 gap-y-8">
                 <div class="md:pt-0 pt-4">
                     <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">$17B+</div>
                     <div class="uppercase text-sm font-medium text-gray-500 tracking-normal">Volume Processed</div>
@@ -239,10 +243,6 @@
                 <div class="pt-4 md:pt-0">
                     <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">5.9M</div>
                     <div class="uppercase text-sm font-medium text-gray-500 tracking-tight">Wallets Served</div>
-                </div>
-                <div class="md:pt-0 pt-4">
-                    <div class="leading-[1.1] bg-clip-text md:text-7xl text-5xl font-semibold text-transparent tracking-tighter bg-gradient-to-b from-[#010101] to-[#989898] scale-100">#2</div>
-                    <div class="uppercase text-sm font-medium text-gray-500 tracking-tight">DEX Aggregator on Sui</div>
                 </div>
             </div>
         </section>
@@ -583,6 +583,12 @@
         ];
 
         function handlePhoneTap(event) {
+            // Hide hint bubble when phone is tapped
+            const hintBubble = document.getElementById('phone-hint-bubble');
+            if (hintBubble) {
+                hintBubble.style.opacity = '0';
+            }
+            
             tapCount++;
             
             if (tapCount <= maxTaps) {
@@ -707,7 +713,7 @@
                     // 27-inch diagonal ≈ 2560x1440px resolution
                     // Diagonal size needed: ~2600px to ensure full coverage
                     const finalSize = 2600; // Fixed size for 27-inch screen
-                    colorOverflow.style.transition = 'width 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-radius 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+                    colorOverflow.style.transition = 'width 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), height 1s cubic-bezier(0.25, 0.46, 0.45, 0.94), border-radius 1s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
                     colorOverflow.style.width = finalSize + 'px';
                     colorOverflow.style.height = finalSize + 'px';
                     colorOverflow.style.borderRadius = '0';
@@ -853,14 +859,7 @@
                     quoteText.style.marginBottom = '1rem';
                     quoteText.textContent = 'So you still like the web version more, don\'t you?';
                     
-                    const quoteAuthor = document.createElement('div');
-                    quoteAuthor.style.fontSize = 'clamp(1rem, 2vw, 1.5rem)';
-                    quoteAuthor.style.opacity = '0.8';
-                    quoteAuthor.style.fontWeight = '500';
-                    quoteAuthor.textContent = '- 7K Team';
-                    
                     quoteContainer.appendChild(quoteText);
-                    quoteContainer.appendChild(quoteAuthor);
                     document.body.appendChild(quoteContainer);
                     
                     // Fade in first quote
@@ -918,13 +917,23 @@
                         }, 1000); // Wait for first quote to fade out
                     }, 3500); // Show second quote after first quote is visible for longer (1 second longer)
                 }, 3000); // First quote appears after 3 seconds
-            }, 2500 + 100); // Start immediately after overflow completes (overflow: 2.5s + 0.1s minimal delay for smooth transition)
+            }, 1000 + 100); // Start immediately after overflow completes (overflow: 1s + 0.1s minimal delay for smooth transition)
         }
 
         // Add click event listener
         if (phoneContainer) {
             phoneContainer.addEventListener('click', handlePhoneTap);
             console.log('Phone tap listener attached');
+            
+            // Show hint bubble after 5 seconds if phone hasn't been tapped
+            setTimeout(() => {
+                if (tapCount === 0) {
+                    const hintBubble = document.getElementById('phone-hint-bubble');
+                    if (hintBubble) {
+                        hintBubble.style.opacity = '1';
+                    }
+                }
+            }, 5000);
         } else {
             console.error('Cannot attach tap listener - phoneContainer not found');
         }
